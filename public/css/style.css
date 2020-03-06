@@ -6,6 +6,7 @@
     --text-secundary: #ececec;
     --bg-primary: #23232e;
     --bg-secundary: #141418;
+    --accent-primary: #ff5722;
     --transition-speed: 600ms;
 }
 
@@ -85,7 +86,7 @@ main {
 }
 
 .fa-primary {
-    color: #FF5722;
+    color: var(--accent-primary);
 }
 
 .fa-secondary {
@@ -122,6 +123,40 @@ main {
 
 .navbar:hover .logo svg {
     transform: rotate(-180deg);
+}
+
+.container {
+    display: flex;
+}
+
+.meal-title {
+    margin-bottom: 0;
+}
+
+.meal-image {
+    max-height: 24rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+.instructions {
+    text-align: justify;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    min-width: 5rem;
+
+    color: white;
+    background: var(--bg-primary);
 }
 
 /***** ***** ***** ***** ****** ***** ***** ***** ***** *****/
