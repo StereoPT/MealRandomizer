@@ -129,6 +129,10 @@ main {
     display: flex;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .meal-title {
     margin-bottom: 0;
 }
@@ -141,11 +145,25 @@ main {
 
 .instructions {
     text-align: justify;
+    overflow-y: visible
+}
+
+.instructions::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.instructions::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+.instructions::-webkit-scrollbar-thumb {
+    background: #E64A19;
 }
 
 .badge {
     display: inline-block;
-    padding: 0.25em 0.4em;
+    padding: 0.25em 0.5em;
+    margin-right: 0.5em;
     font-size: 75%;
     font-weight: 700;
     line-height: 1;
